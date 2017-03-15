@@ -113,5 +113,19 @@ namespace Test
             Assert.That(res[3].Day, Is.EqualTo(30));
 
         }
+
+        [Test]
+        public void Monthly_EveryOtherMonth()
+        {
+            var incrementor = new DateIncrementor.DateIncrementor();
+
+            incrementor.WithStartDate(DateTime.Parse("2017-01-1")).OnLastDayOfMonth().WithMonthIncrement(2);
+
+            var res = incrementor.GetDates().Take(4).ToList();
+
+            Assert.That(res[0].Month, Is.EqualTo(1));
+            Assert.That(res[1].Month, Is.EqualTo(3));
+
+        }
     }
 }
