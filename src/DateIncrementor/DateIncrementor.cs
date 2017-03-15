@@ -100,8 +100,8 @@ namespace DateIncrementor
             }
             if (_day.HasValue)
             {
-                for (; date.AddDays(-1).Day > _day.Value || date.AddDays(1).Month > date.Month; date = date.AddDays(-1)) ;
-                for (; date.AddDays(1).Day <= _day.Value || date.AddDays(1).Month > date.Month; date = date.AddDays(1)) ;
+                for (; date.AddDays(-1).Day > _day.Value && date.AddDays(-1).Month == date.Month; date = date.AddDays(-1)) ;
+                for (; date.AddDays(1).Day <= _day.Value && date.AddDays(1).Month == date.Month; date = date.AddDays(1)) ;
             }
             return date;
         }

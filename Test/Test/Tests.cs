@@ -64,7 +64,22 @@ namespace Test
                 Assert.That(dateTime.Month, Is.EqualTo(2));
                 Assert.That(dateTime.Day, Is.EqualTo(24));
             }
+        }
 
+        [Test]
+        public void Monthly_Day_Exceeds_30()
+        {
+            var incrementor = new DateIncrementor.DateIncrementor();
+
+            incrementor.WithStartDate(DateTime.Parse("2017-02-1")).OnDay(31).WithMonthIncrement(1);
+
+            var res = incrementor.GetDates().Take(1).ToList();
+
+            Assert.NotNull(res);
+            var dateTime = res.Single();
+            Assert.That(dateTime.Year, Is.EqualTo(2017));
+            Assert.That(dateTime.Month, Is.EqualTo(2));
+            Assert.That(dateTime.Day, Is.EqualTo(28));
         }
     }
 }
