@@ -127,5 +127,19 @@ namespace Test
             Assert.That(res[1].Month, Is.EqualTo(3));
 
         }
+
+        [Test]
+        public void Weekly_EveryOtherWeek()
+        {
+            var incrementor = new DateIncrementor.DateIncrementor();
+
+            incrementor.WithStartDate(DateTime.Parse("2017-01-1")).WithWeekIncrement(2).OnDayOfWeek(2);
+
+            var res = incrementor.GetDates().Take(4).ToList();
+
+            Assert.That(res[0], Is.EqualTo("2017-01-3"));
+            Assert.That(res[1], Is.EqualTo("2017-01-10"));
+
+        }
     }
 }
