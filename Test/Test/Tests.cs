@@ -60,7 +60,7 @@ namespace Test
             for (var i = 2; i <= 4; i++)
             {
                 var dateTime = res[i - 2];
-                Assert.That(dateTime.Year, Is.EqualTo(2017+i-2));
+                Assert.That(dateTime.Year, Is.EqualTo(2017 + i - 2));
                 Assert.That(dateTime.Month, Is.EqualTo(2));
                 Assert.That(dateTime.Day, Is.EqualTo(24));
             }
@@ -71,7 +71,23 @@ namespace Test
         {
             var incrementor = new DateIncrementor.DateIncrementor();
 
-            incrementor.WithStartDate(DateTime.Parse("2017-02-1")).OnDay(31).WithMonthIncrement(1);
+            incrementor.WithStartDate(DateTime.Parse("2017-04-1")).OnDay(31).WithMonthIncrement(1);
+
+            var res = incrementor.GetDates().Take(1).ToList();
+
+            Assert.NotNull(res);
+            var dateTime = res.Single();
+            Assert.That(dateTime.Year, Is.EqualTo(2017));
+            Assert.That(dateTime.Month, Is.EqualTo(4));
+            Assert.That(dateTime.Day, Is.EqualTo(30));
+        }
+
+        [Test]
+        public void Monthly_Day_FebruaryExceeds28()
+        {
+            var incrementor = new DateIncrementor.DateIncrementor();
+
+            incrementor.WithStartDate(DateTime.Parse("2017-02-2")).OnDay(29).WithMonthIncrement(1);
 
             var res = incrementor.GetDates().Take(1).ToList();
 
