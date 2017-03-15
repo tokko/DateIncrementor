@@ -133,12 +133,17 @@ namespace Test
         {
             var incrementor = new DateIncrementor.DateIncrementor();
 
-            incrementor.WithStartDate(DateTime.Parse("2017-01-1")).WithWeekIncrement(2).OnDayOfWeek(2);
+            incrementor.WithStartDate(DateTime.Parse("2017-03-1")).WithWeekIncrement(2).OnDayOfWeek(2);
 
-            var res = incrementor.GetDates().Take(4).ToList();
+            var res = incrementor.GetDates().Take(2).ToList();
 
-            Assert.That(res[0], Is.EqualTo("2017-01-3"));
-            Assert.That(res[1], Is.EqualTo("2017-01-10"));
+            Assert.That(res[0].Year, Is.EqualTo(2017));
+            Assert.That(res[0].Month, Is.EqualTo(3));
+            Assert.That(res[0].Day, Is.EqualTo(14));
+
+            Assert.That(res[1].Year, Is.EqualTo(2017));
+            Assert.That(res[1].Month, Is.EqualTo(3));
+            Assert.That(res[1].Day, Is.EqualTo(28));
 
         }
     }

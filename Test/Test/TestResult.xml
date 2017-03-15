@@ -1,19 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<test-run id="0" testcasecount="7" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="41" result="Passed" portable-engine-version="3.3.0.0" start-time="2017-03-15 19:44:32Z" end-time="2017-03-15 19:44:32Z" duration="0.172750">
-  <test-run id="0" testcasecount="7" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="41" result="Passed" portable-engine-version="3.3.0.0" start-time="2017-03-15 19:44:32Z" end-time="2017-03-15 19:44:32Z" duration="0.096139">
-    <test-suite type="Assembly" id="1008" name="Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" fullname="Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" runstate="Runnable" testcasecount="7" result="Passed" start-time="2017-03-15 19:44:32Z" end-time="2017-03-15 19:44:32Z" duration="0.075567" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="41">
+<test-run id="0" testcasecount="8" total="8" passed="7" failed="1" inconclusive="0" skipped="0" asserts="44" result="Failed" portable-engine-version="3.3.0.0" start-time="2017-03-15 20:01:47Z" end-time="2017-03-15 20:01:47Z" duration="0.212810">
+  <test-run id="0" testcasecount="8" total="8" passed="7" failed="1" inconclusive="0" skipped="0" asserts="44" result="Failed" portable-engine-version="3.3.0.0" start-time="2017-03-15 20:01:47Z" end-time="2017-03-15 20:01:47Z" duration="0.133194">
+    <test-suite type="Assembly" id="1009" name="Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" fullname="Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2017-03-15 20:01:47Z" end-time="2017-03-15 20:01:47Z" duration="0.111662" total="8" passed="7" failed="1" inconclusive="0" skipped="0" asserts="44">
       <settings>
         <setting name="WorkDirectory" value="C:\tmp\DateIncrementor\Test\Test" />
       </settings>
-      <test-suite type="TestSuite" id="1009" name="Test" fullname="Test" runstate="Runnable" testcasecount="7" result="Passed" start-time="2017-03-15 19:44:32Z" end-time="2017-03-15 19:44:32Z" duration="0.068834" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="41">
-        <test-suite type="TestFixture" id="1000" name="Tests" fullname="Test.Tests" classname="Test.Tests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2017-03-15 19:44:32Z" end-time="2017-03-15 19:44:32Z" duration="0.065959" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="41">
-          <test-case id="1002" name="Monthly" fullname="Test.Tests.Monthly" methodname="Monthly" classname="Test.Tests" runstate="Runnable" seed="451217224" result="Passed" start-time="2017-03-15 19:44:32Z" end-time="2017-03-15 19:44:32Z" duration="0.021885" asserts="11" />
-          <test-case id="1004" name="Monthly_Day_Exceeds_30" fullname="Test.Tests.Monthly_Day_Exceeds_30" methodname="Monthly_Day_Exceeds_30" classname="Test.Tests" runstate="Runnable" seed="707810774" result="Passed" start-time="2017-03-15 19:44:32Z" end-time="2017-03-15 19:44:32Z" duration="0.001250" asserts="4" />
-          <test-case id="1005" name="Monthly_Day_FebruaryExceeds28" fullname="Test.Tests.Monthly_Day_FebruaryExceeds28" methodname="Monthly_Day_FebruaryExceeds28" classname="Test.Tests" runstate="Runnable" seed="49453423" result="Passed" start-time="2017-03-15 19:44:32Z" end-time="2017-03-15 19:44:32Z" duration="0.000415" asserts="4" />
-          <test-case id="1007" name="Monthly_EveryOtherMonth" fullname="Test.Tests.Monthly_EveryOtherMonth" methodname="Monthly_EveryOtherMonth" classname="Test.Tests" runstate="Runnable" seed="398882163" result="Passed" start-time="2017-03-15 19:44:32Z" end-time="2017-03-15 19:44:32Z" duration="0.000410" asserts="2" />
-          <test-case id="1006" name="Monthly_LastDayOfMonth" fullname="Test.Tests.Monthly_LastDayOfMonth" methodname="Monthly_LastDayOfMonth" classname="Test.Tests" runstate="Runnable" seed="1586975616" result="Passed" start-time="2017-03-15 19:44:32Z" end-time="2017-03-15 19:44:32Z" duration="0.000453" asserts="4" />
-          <test-case id="1001" name="Weekly" fullname="Test.Tests.Weekly" methodname="Weekly" classname="Test.Tests" runstate="Runnable" seed="1035609907" result="Passed" start-time="2017-03-15 19:44:32Z" end-time="2017-03-15 19:44:32Z" duration="0.001241" asserts="5" />
-          <test-case id="1003" name="Yearly" fullname="Test.Tests.Yearly" methodname="Yearly" classname="Test.Tests" runstate="Runnable" seed="957480469" result="Passed" start-time="2017-03-15 19:44:32Z" end-time="2017-03-15 19:44:32Z" duration="0.000848" asserts="11" />
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1010" name="Test" fullname="Test" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2017-03-15 20:01:47Z" end-time="2017-03-15 20:01:47Z" duration="0.104521" total="8" passed="7" failed="1" inconclusive="0" skipped="0" asserts="44">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestFixture" id="1000" name="Tests" fullname="Test.Tests" classname="Test.Tests" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2017-03-15 20:01:47Z" end-time="2017-03-15 20:01:47Z" duration="0.101381" total="8" passed="7" failed="1" inconclusive="0" skipped="0" asserts="44">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1002" name="Monthly" fullname="Test.Tests.Monthly" methodname="Monthly" classname="Test.Tests" runstate="Runnable" seed="606272057" result="Passed" start-time="2017-03-15 20:01:47Z" end-time="2017-03-15 20:01:47Z" duration="0.023744" asserts="11" />
+          <test-case id="1004" name="Monthly_Day_Exceeds_30" fullname="Test.Tests.Monthly_Day_Exceeds_30" methodname="Monthly_Day_Exceeds_30" classname="Test.Tests" runstate="Runnable" seed="824731193" result="Passed" start-time="2017-03-15 20:01:47Z" end-time="2017-03-15 20:01:47Z" duration="0.001204" asserts="4" />
+          <test-case id="1005" name="Monthly_Day_FebruaryExceeds28" fullname="Test.Tests.Monthly_Day_FebruaryExceeds28" methodname="Monthly_Day_FebruaryExceeds28" classname="Test.Tests" runstate="Runnable" seed="271559556" result="Passed" start-time="2017-03-15 20:01:47Z" end-time="2017-03-15 20:01:47Z" duration="0.000398" asserts="4" />
+          <test-case id="1007" name="Monthly_EveryOtherMonth" fullname="Test.Tests.Monthly_EveryOtherMonth" methodname="Monthly_EveryOtherMonth" classname="Test.Tests" runstate="Runnable" seed="399479561" result="Passed" start-time="2017-03-15 20:01:47Z" end-time="2017-03-15 20:01:47Z" duration="0.000415" asserts="2" />
+          <test-case id="1006" name="Monthly_LastDayOfMonth" fullname="Test.Tests.Monthly_LastDayOfMonth" methodname="Monthly_LastDayOfMonth" classname="Test.Tests" runstate="Runnable" seed="972849924" result="Passed" start-time="2017-03-15 20:01:47Z" end-time="2017-03-15 20:01:47Z" duration="0.000441" asserts="4" />
+          <test-case id="1001" name="Weekly" fullname="Test.Tests.Weekly" methodname="Weekly" classname="Test.Tests" runstate="Runnable" seed="1315220931" result="Passed" start-time="2017-03-15 20:01:47Z" end-time="2017-03-15 20:01:47Z" duration="0.001237" asserts="5" />
+          <test-case id="1008" name="Weekly_EveryOtherWeek" fullname="Test.Tests.Weekly_EveryOtherWeek" methodname="Weekly_EveryOtherWeek" classname="Test.Tests" runstate="Runnable" seed="1690065269" result="Failed" start-time="2017-03-15 20:01:47Z" end-time="2017-03-15 20:01:47Z" duration="0.028089" asserts="3">
+            <failure>
+              <message><![CDATA[  Expected: 14
+  But was:  1
+]]></message>
+              <stack-trace><![CDATA[at Test.Tests.Weekly_EveryOtherWeek() in C:\tmp\DateIncrementor\Test\Test\Tests.cs:line 142
+]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1003" name="Yearly" fullname="Test.Tests.Yearly" methodname="Yearly" classname="Test.Tests" runstate="Runnable" seed="206158726" result="Passed" start-time="2017-03-15 20:01:47Z" end-time="2017-03-15 20:01:47Z" duration="0.000877" asserts="11" />
         </test-suite>
       </test-suite>
     </test-suite>

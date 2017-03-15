@@ -86,10 +86,10 @@ namespace DateIncrementor
 
         private DateTime AdjustDate(DateTime date)
         {
-             if (_weekDay.HasValue)
+            if (_weekDay.HasValue)
             {
-                for (; date.AddDays(-1).DayOfWeek > (DayOfWeek) _weekDay.Value; date = date.AddDays(-1)) ;
-                for (; ((int) date.AddDays(1).DayOfWeek) < _weekDay.Value; date = date.AddDays(-1)) ;
+                for (; date.AddDays(-1).DayOfWeek > (DayOfWeek)_weekDay.Value; date = date.AddDays(-1)) ;
+                for (; (int)date.AddDays(1).DayOfWeek < _weekDay.Value; date = date.AddDays(1)) ;
             }
             if (_month.HasValue)
             {
