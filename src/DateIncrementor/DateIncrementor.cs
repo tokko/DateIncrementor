@@ -62,9 +62,9 @@ namespace DateIncrementor
             _day = day;
             return this;
         }
-        public DateIncrementor OnLastDayOfMonth(bool onLastDayOfMonth)
+        public DateIncrementor OnLastDayOfMonth()
         {
-            _onLastDayOfMonth = onLastDayOfMonth;
+            _onLastDayOfMonth = true;
             return this;
         }
 
@@ -86,9 +86,7 @@ namespace DateIncrementor
 
         private DateTime AdjustDate(DateTime date)
         {
-            if (_onLastDayOfMonth)
-                for (; date.AddDays(1).Month < date.Month; date = date.AddDays(1)) ;
-            if (_weekDay.HasValue)
+             if (_weekDay.HasValue)
             {
                 for (; date.AddDays(-1).DayOfWeek > (DayOfWeek) _weekDay.Value; date = date.AddDays(-1)) ;
                 for (; ((int) date.AddDays(1).DayOfWeek) < _weekDay.Value; date = date.AddDays(-1)) ;
@@ -103,6 +101,9 @@ namespace DateIncrementor
                 for (; date.AddDays(-1).Day > _day.Value && date.AddDays(-1).Month == date.Month; date = date.AddDays(-1)) ;
                 for (; date.AddDays(1).Day <= _day.Value && date.AddDays(1).Month == date.Month; date = date.AddDays(1)) ;
             }
+            if (_onLastDayOfMonth)
+                for (; date.AddDays(1).Month == date.Month; date = date.AddDays(1)) ;
+
             return date;
         }
     }

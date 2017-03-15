@@ -97,5 +97,21 @@ namespace Test
             Assert.That(dateTime.Month, Is.EqualTo(2));
             Assert.That(dateTime.Day, Is.EqualTo(28));
         }
+
+        [Test]
+        public void Monthly_LastDayOfMonth()
+        {
+            var incrementor = new DateIncrementor.DateIncrementor();
+
+            incrementor.WithStartDate(DateTime.Parse("2017-01-1")).OnLastDayOfMonth().WithMonthIncrement(1);
+
+            var res = incrementor.GetDates().Take(4).ToList();
+
+            Assert.That(res[0].Day, Is.EqualTo(31));
+            Assert.That(res[1].Day, Is.EqualTo(28));
+            Assert.That(res[2].Day, Is.EqualTo(31));
+            Assert.That(res[3].Day, Is.EqualTo(30));
+
+        }
     }
 }
