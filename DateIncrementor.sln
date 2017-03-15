@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{37536E49-E4A0-45BF-953D-B0B0E98DEF31}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{342A7B68-902C-495B-813E-5E314407BA77}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DateIncrementor", "src\DateIncrementor\DateIncrementor.xproj", "{533B3F0D-019D-460C-A131-BA67A5B40AAF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{A7E67D7E-2BA6-4C28-8894-6B74A0DBBAC6}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Test", "test\Test\Test.xproj", "{6D858A44-A023-4874-9DA6-517EA32AA10E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{533B3F0D-019D-460C-A131-BA67A5B40AAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{533B3F0D-019D-460C-A131-BA67A5B40AAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{533B3F0D-019D-460C-A131-BA67A5B40AAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{533B3F0D-019D-460C-A131-BA67A5B40AAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D858A44-A023-4874-9DA6-517EA32AA10E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D858A44-A023-4874-9DA6-517EA32AA10E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D858A44-A023-4874-9DA6-517EA32AA10E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D858A44-A023-4874-9DA6-517EA32AA10E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{533B3F0D-019D-460C-A131-BA67A5B40AAF} = {37536E49-E4A0-45BF-953D-B0B0E98DEF31}
+		{6D858A44-A023-4874-9DA6-517EA32AA10E} = {A7E67D7E-2BA6-4C28-8894-6B74A0DBBAC6}
+	EndGlobalSection
+EndGlobal

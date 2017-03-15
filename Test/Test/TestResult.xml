@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<test-run id="0" testcasecount="3" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="27" result="Passed" portable-engine-version="3.3.0.0" start-time="2017-03-15 19:00:27Z" end-time="2017-03-15 19:00:27Z" duration="0.174940">
+  <test-run id="0" testcasecount="3" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="27" result="Passed" portable-engine-version="3.3.0.0" start-time="2017-03-15 19:00:27Z" end-time="2017-03-15 19:00:27Z" duration="0.097327">
+    <test-suite type="Assembly" id="1004" name="Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" fullname="Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" runstate="Runnable" testcasecount="3" result="Passed" start-time="2017-03-15 19:00:27Z" end-time="2017-03-15 19:00:27Z" duration="0.074782" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="27">
+      <settings>
+        <setting name="WorkDirectory" value="C:\tmp\SteamStream\DateIncrementor\Test\Test" />
+      </settings>
+      <test-suite type="TestSuite" id="1005" name="Test" fullname="Test" runstate="Runnable" testcasecount="3" result="Passed" start-time="2017-03-15 19:00:27Z" end-time="2017-03-15 19:00:27Z" duration="0.067892" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="27">
+        <test-suite type="TestFixture" id="1000" name="Tests" fullname="Test.Tests" classname="Test.Tests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2017-03-15 19:00:27Z" end-time="2017-03-15 19:00:27Z" duration="0.064654" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="27">
+          <test-case id="1002" name="Monthly" fullname="Test.Tests.Monthly" methodname="Monthly" classname="Test.Tests" runstate="Runnable" seed="1247383845" result="Passed" start-time="2017-03-15 19:00:27Z" end-time="2017-03-15 19:00:27Z" duration="0.021809" asserts="11" />
+          <test-case id="1001" name="Weekly" fullname="Test.Tests.Weekly" methodname="Weekly" classname="Test.Tests" runstate="Runnable" seed="206018736" result="Passed" start-time="2017-03-15 19:00:27Z" end-time="2017-03-15 19:00:27Z" duration="0.001656" asserts="5" />
+          <test-case id="1003" name="Yearly" fullname="Test.Tests.Yearly" methodname="Yearly" classname="Test.Tests" runstate="Runnable" seed="1698632579" result="Passed" start-time="2017-03-15 19:00:27Z" end-time="2017-03-15 19:00:27Z" duration="0.000736" asserts="11" />
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-run>
+</test-run>
